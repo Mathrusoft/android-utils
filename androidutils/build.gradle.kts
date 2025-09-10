@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("maven-publish")
+    id("signing")
 }
 
 android {
@@ -59,7 +60,7 @@ afterEvaluate {
                 
                 groupId = "org.matools"
                 artifactId = "androidutils"
-                version = "1.0.0"
+                version = "0.0.1"
                 
                 pom {
                     name.set("Android Utils")
@@ -89,5 +90,31 @@ afterEvaluate {
                 }
             }
         }
+        
+        repositories {
+            // Maven Central
+            maven {
+                name = "OSSRH"
+                url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+                credentials {
+                    username = findProperty("NEXUS_USERNAME")?.toString()
+                    password = findProperty("NEXUS_PASSWORD")?.toString()
+                }
+            }
+            
+            // GitHub Packages
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/Mathrusoft/android-utils")
+                credentials {
+                    username = findProperty("GITHUB_USERNAME")?.toString()
+                    password = findProperty("GITHUB_TOKEN")?.toString()
+                }
+            }
+        }
+    }
+    
+    signing {
+        sign(publishing.publications["release"])
     }
 }

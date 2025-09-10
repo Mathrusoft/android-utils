@@ -21,7 +21,7 @@ Add this to your module's `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation 'org.matools:androidutils:1.0.0'
+    implementation 'org.matools:androidutils:0.0.1'
 }
 ```
 
@@ -29,7 +29,7 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("org.matools:androidutils:1.0.0")
+    implementation("org.matools:androidutils:0.0.1")
 }
 ```
 
@@ -215,8 +215,8 @@ limitations under the License.
 
 ## Changelog
 
-### Version 1.0.0
-- Initial release
+### Version 0.0.1
+- Initial development release
 - StringUtils with common string operations
 - DeviceUtils for device information and screen utilities
 - NetworkUtils for connectivity checks
