@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Common permissions that utilities might need -->
+    <!-- Add specific permissions as needed for your utility functions -->
+    
+</manifest>

@@ -1,0 +1,18 @@
+# This file contains machine-specific properties for your local environment
+# Copy this file to local.properties and update the paths for your system
+# This file should NOT be committed to version control
+
+# Location of the Android SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+sdk.dir=C:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+
+# Or on macOS/Linux:
+# sdk.dir=/Users/YourUsername/Library/Android/sdk
+# sdk.dir=/home/YourUsername/Android/Sdk
+
+# Optional: Signing properties for release builds
+# KEYSTORE_PATH=path/to/your/keystore.jks
+# KEYSTORE_PASSWORD=your_keystore_password
+# KEY_ALIAS=your_key_alias
+# KEY_PASSWORD=your_key_password

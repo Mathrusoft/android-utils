@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Utils Sample</string>
+    <string name="string_utils_title">String Utils Demo</string>
+    <string name="device_utils_title">Device Utils Demo</string>
+    <string name="network_utils_title">Network Utils Demo</string>
+    <string name="date_utils_title">Date Utils Demo</string>
+    <string name="prefs_utils_title">Preferences Utils Demo</string>
+    
+    <string name="test_email">Enter email to validate:</string>
+    <string name="test_string">Enter text to process:</string>
+    <string name="validate">Validate</string>
+    <string name="process">Process</string>
+    <string name="check_network">Check Network</string>
+    <string name="get_device_info">Get Device Info</string>
+    <string name="format_date">Format Current Date</string>
+    <string name="save_preference">Save Preference</string>
+    <string name="load_preference">Load Preference</string>
+    
+    <string name="results_title">Results:</string>
+</resources>
